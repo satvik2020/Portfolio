@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>TECHY'S CODEPEN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9d511fdf63.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <label for=""><i class="fa-brands fa-html5"></i>HTML</label>
+
+            <TExtarea id="html-code" onkeyup="run()"></TExtarea>
+
+            <label for=""><i class="fa-brands fa-css3-alt"></i>CSS</label>
+            <TExtarea id="css-code" onkeyup="run()"></TExtarea>
+
+            <label for=""><i class="fa-brands fa-js"></i>JAVASCRIPT</label>
+            <TExtarea id="js-code" onkeyup="run()"></TExtarea>
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play">OUTPUT</i></label><iframe src="" id="output"></iframe>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

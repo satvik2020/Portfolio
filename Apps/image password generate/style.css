@@ -1,0 +1,115 @@
+
+
+  body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+
+  .password-container{
+    background-color: pink;
+    width: 500px;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    margin: 10px;
+ 
+  }
+
+.input-container{
+  border:solid 2px black;
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.input{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.input::placeholder{
+  letter-spacing: 0;
+}
+
+.fa-copy{
+  cursor: pointer;
+  opacity: .3;
+  transition: .5s ease all;
+}
+
+.fa-copy:hover{
+  opacity: .7;
+}
+
+.btn{
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 10px 0;
+  font-size: 20px;
+  transition: .5s ease all;
+}
+
+.btn:hover{
+   background-color: white;
+   color: black;
+   cursor: pointer;
+}
+
+.btn:active{
+  transform:scale(0.95);
+}
+
+
+
+.tooltip{
+  position: relative;
+}
+
+.tooltip::before,
+.tooltip::after{
+  color: #111;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-15px);
+  font-size: .9rem;
+  opacity: 0;
+  transition: .4s ease-in-out;
+}
+
+.tooltip::before{
+  content: "";
+  top: -2px;
+  width: 0;
+  height: 0;
+  border: .6rem solid transparent;
+  border-top-color: #eee;
+}
+
+.tooltip::after{
+  content: attr(title);
+  top: -44px;
+  background: #eee;
+  white-space: pre;
+  padding: .8rem 1rem;
+  border-radius: .4rem;
+}
+
+.tooltip:hover::after,.tooltip:hover::before{
+opacity: 1;
+transform: translate(-50%,-8px);
+}

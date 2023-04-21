@@ -1,0 +1,50 @@
+/*@import url("https://font.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap");*/
+
+body{
+    background-color: #ccc;
+}
+
+.selections{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 100ms;
+    font-size: 80px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.results{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.result-score-comp,.result-score-you{
+    margin-left: .1rem;
+    font-size: .7em;
+    color: #333;
+}
+
+.result-selection{
+    opacity: .5;
+
+}
+
+.result-selection.winner{
+    opacity: 1;
+    font-size: 3rem;
+}
+

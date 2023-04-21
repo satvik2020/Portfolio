@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Random Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess the Random Number
+        </h1>
+
+        <div class="splashscreen" id="splashscreen">
+            <h2>Select any one mode to play</h2>
+            <button class="easy btn" id="easy">Easy</button>
+            <button class="hard btn" id="hard">Hard</button>
+            <button class="extreme btn" id="extreme">Extreme</button>
+        </div>
+        <div class="mainscreen" id="mainscreen">
+            <h1>Guess the number</h1>
+            <h2><span id="guessno"></span>Guesses left</h2>
+            <h3>Score: <span id="score">0</span></h3>
+            <h3>Hi Score: <span id="hiscore">0</span></h3>
+            <div class="input">
+                <input type="number" name="" placeholder="Enter any guess" id="guess" class="guessinput">
+                <button class="submit" id="submitbtn">Submit</button>
+            </div>
+            <h1 class="lessmore" id="lessmore"></h1>
+            <h1 class="wrongcorrect" id="wrongcorrect"></h1>
+            <button class="easy btn" id="next">Next</button>
+            <button class="extreme btn" id="Back">Back</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

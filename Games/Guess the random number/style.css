@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Work sans',sans-serif;
+}
+
+body{
+    background-color: purple;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.container{
+    background-color: peru;
+    height: 560px;
+    width: 450px;
+    border-radius: 10px;
+   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .3);
+   text-align: center;
+}
+
+.container h1{
+margin-top: 15px;
+}
+
+.splashscreen{
+    display: flex;
+    align-items: center;
+
+  height: 100%;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.splashscreen h2{
+ margin-top: 45px;
+}
+
+ .btn{
+    margin-top: 34px;
+    height: 60px;
+    width: 340px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.easy{
+    margin-top: 75px !important;
+
+}
+
+.mainscreen{
+display: none;
+}
+
+.mainscreen h2{
+    margin-top: 50px;
+}
+
+.input{
+    margin-top: 30px;
+   
+}
+
+
+.input input{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+     height: 50px;
+     width: 250px;
+}
+
+.input button{
+border-radius: 10px;
+width: 100px;
+height: 50px;
+border: none;
+outline: none;
+background-color: white;
+}
+
+
+.mainscreen .easy{
+    margin-top: 0 !important;
+    display: none;
+}
+
+button:hover{
+    animation: grow .5s ease;
+}
+
+@keyframes grow{
+   0%{
+    transform: scale(1.2);
+   }
+    100%{
+        transform: scale(1.2);
+    }
+}
