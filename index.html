@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Techy cuber</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js" integrity="sha512-5Thlno/Mv5W8d5z7eEuOahEZ3nXZ0uAuOgf8m7p7+/9Ltkzt9sn9z6sR87m/9bqW9vqpywUq65YeNW0MuzW9Bw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./images/large-removebg-preview.png" class="Logo" title="logo" alt="MY LOGO">
+
+        <i class="fas fa-bars" onclick="openmenu()"> </i>
+        <ul id="menu">
+          <li><a href="#" style="--i:1"onclick="closemenu()" class="">Home</a></li>
+          <li><a href="#about" style="--i:2" onclick="closemenu()">About</a></li>
+          <li><a href="#skills"style="--i:3" onclick="closemenu()">Skills</a></li>
+          <li><a href=""style="--i:4" onclick="closemenu()">My projects</a></li>
+          <li><a href=""style="--i:5" onclick="closemenu()">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+
+
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi i am <span>Satvikk</span> Amit <br> Singh from India</h1>
+        <h3>And I'm A <span class="multitext"></span></h3>
+        <div class="social-media">
+          <a href="#" style="--i:7;"><i id="no1" class="bx bxl-facebook"></i></a>
+          <a href="https://www.github.com/satvikktechy20" target="_blank" style="--i:8;"><i
+              class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/satvik_techy20" target="_blank" style="--i:9;"><i
+              class="bx bxl-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCCRg72fFaKGFlI_1YwVNAQQ" target="_blank" style="--i:10;"><i
+              class="bx bxl-youtube"></i></a>
+        </div>
+        <a href="#" class="btn">See projects</a>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  <!-------------- about ------------>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/images/user.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hi, my name is Satvik Singh and i am a Student at Birla Divya Jyoti School. Coding is my passion since
+            lockdown and i love creating awesome websites.You can check some of them it the projects section.</p>
+
+         <div class="tab-title" >
+          <p class="tab-links activelink" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Education</p>
+
+         </div>
+         <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+            <li><span>Web Development</span><br>Web App Development</li>
+            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+          
+          </ul>
+         </div>
+         <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2017-Current</span><br>Taking Primary and Higher-Secondary studies from Birla Divya Jyoti School Siliguri </li>
+            <li><span>2016-2017</span><br>Took 1 year of Education from BPS School Purnea, Bihar.</li>
+            <li><span>2015-2016</span><br>Took 1 year of Education from Jaya International School Mumbai, Maharashtra.</li>
+            <li><span>2013-2015</span><br>Nursery and LKG at Tree House, Mumbai.</li>
+          </ul>
+         </div>
+          </div>
+
+      </div>
+    </div>
+ 
+  </div>
+    <div class="" id="skills">
+
+      <div class="about-col-1">
+      <div class="skill-circles">
+        <h1>HTML</h1>
+        <div class="outer">
+          <div class="inner">0%</div>
+        </div>
+         
+        <h1>CSS</h1>
+        <div class="outer2">
+          <div class="inner2">0%</div>
+        </div>
+       </div>
+       <div class="skill-circles"> 
+        <h1>PHP</h1>
+        <div class="outer3">
+          <div class="inner3">0%</div>
+        </div>
+
+        <h1>JS</h1>
+        <div class="outer4">
+          <div class="inner4">0%</div>
+        </div>
+        </div>
+       <div class="skill-circles">
+        <h1>PYTHON</h1>
+        <div class="outer5">
+          <div class="inner5">0%</div>
+        </div>
+
+    
+      </div>
+    </div>
+    <div class="about-col-2">
+      <h1 class="sub-title">My Skills</h1>
+      <p>This section shows the percentage of skill I have in the 5 most used languages.
+         I took the test from a site called W3Schools and have written the percentage I got.</p>
+    </div>
+    </div>
+        <!--  <div class="start">
+      <h1>My Apps and Games</h1>
+      <h1 class="myer">App (Slide to view)</h1>
+    </div>
+      <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+          <div class="slide swiper-slide">
+  
+            <div class="image-data">
+              <span class="text">Apps.</span>
+              <h2>
+                Filter App <br />
+                like B612.
+              </h2>
+              <a href="./Apps/filter app/index.html" class="button">Open</a>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+  
+            <div class="image-data">
+              <span class="text">Apps.</span>
+              <h2>
+                Web Editor Like <br />
+                Codepen
+              </h2>
+              <a href="./Apps/Codepen/index.html" class="button">Open</a>
+            </div>
+          </div>
+         
+          <div class="slide swiper-slide">
+  
+            <div class="image-data">
+              <span class="text">Apps.</span>
+              <h2>
+             Calculator App <br>using html css js
+              </h2>
+              <a href="./Apps/Calculator/index.html" class="button">Open</a>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="image-data">
+              <span class="text">Apps</span>
+              <h2>
+               Get Text from<br />
+                Image
+              </h2>
+              <a href="./Apps/img to js/index.html" class="button">Open.</a>
+            </div>
+          </div>
+  
+
+          <div class="slide swiper-slide">
+  
+            <div class="image-data">
+              <span class="text">Apps.</span>
+              <h2>
+               Random Password<br />
+                       Generator
+              </h2>
+              <a href="./Apps/image password generate/index.html" class="button">Open</a>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="image-data">
+              <span class="text">Apps</span>
+              <h2>Weather App to Show Weather
+              </h2>
+              <a href="./Apps/weather app/" class="button">Open.</a>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+  
+            <div class="image-data">
+              <span class="text">Apps.</span>
+              <h2>
+               AI Like <br> Jarvis
+              </h2>
+              <a href="./Apps/J.A.R.V.I.S/index.html" class="button">Open</a>
+            </div>
+          </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+      
+      <h1 class="myer">Games (Slide to view)</h1>
+
+      <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+          <div class="slide swiper-slide">
+  
+          <div class="slide swiper-slide">
+            <div class="image-data">
+              <span class="text">Games.</span>
+              <h2>
+              Flip Card <br>Memory Game
+              </h2>
+              <a href="./Games/memory game/index.html" class="button">Open</a>
+            </div>
+          </div>
+
+
+          <div class="slide swiper-slide">
+  
+            <div class="image-data">
+              <span class="text">Games.</span>
+              <h2>
+              Tic-Tac-Toe<br />
+                       Game
+              </h2>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="image-data">
+              <span class="text">Games</span>
+              <h2>Flip Card <br>Memory Game
+              </h2>
+              <a href="./Games/memory game/index.html" class="button">Open.</a>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <div class="image-data">
+              <span class="text">Games.</span>
+              <h2>
+                Rock Paper <br> Scissor Game.
+              </h2>
+              <a href="./Games/RockPaperScissor/index.html" class="button">Open</a>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <div class="image-data">
+              <span class="text">Games.</span>
+              <h2>
+                Tambola <br>
+                Board
+              </h2>
+              <a href="./Games/Tambola board/index.html" class="button">Open</a>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <div class="image-data">
+              <span class="text">Games.</span>
+              <h2>
+               Guess the <br>
+                random number
+              </h2>
+              <a href="./Games/Guess the random number/index.html" class="button">Open</a>
+            </div>
+          </div>
+        </div>
+     
+          <div class="swiper-button-next nav-btn"></div>
+          <div class="swiper-button-prev nav-btn"></div>
+          <div class="swiper-pagination"></div>
+      </section>
+  
+   
+
+    <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+  
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="scripts/script.js"></script>
+    -->
+    <h1 class="myer">App</h1>
+    <section class="slider">
+        <ul class="carousel" id="carousel">
+          <li class="bg-1">
+            <h1>Apps.</h1>
+            <p>Calculator using <br>html css js</p>
+            <a href="./Apps/Calculator/index.html" class="button">Open</a>
+
+          </li>
+          <li class="bg-2">
+             <h1>Apps.</h1>
+             <p>Web Editor <br> like codepen</p>
+             <a href="./Apps/Codepen/index.html" class="button">Open</a>
+
+          </li>
+          <li class="bg-3">
+            <h1>Apps.</h1>
+             <p>Filter APP <br> like B612</p>
+            <a href="./Apps/filter app/index.html" class="button">Open</a>
+
+          </li>
+          <li class="bg-4">
+            <h1>Apps.</h1>
+            <p>Img to Text <br> Website</p>
+           <a href="./Apps/img to js/index.html" class="button">Open</a>
+
+         </li>
+         <li class="bg-5">
+          <h1>Apps.</h1>
+          <p>AI like IRON MAN <br>Jarvis</p>
+         <a href="./Apps/FRIDAY/index.html" class="button">Open</a>
+
+       </li>
+       <li class="bg-6">
+        <h1>Apps.</h1>
+        <p>Random Password Generator</p>
+       <a href="./Apps/image password generate/index.html" class="button">Open</a>
+
+     </li>
+     <li class="bg-7">
+      <h1>Apps.</h1>
+      <p>Weather App <br>to Show Weather</p>
+     <a href="./Apps/weather app/index.html" class="button">Open</a>
+
+   </li>
+        </ul>
+        <ul class="sliderpagnation">
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+        </ul>
+</section>
+
+
+<h1 class="myer">Games</h1>
+    <section class="slider">
+        <ul class="carousel" id="carousel">
+          <li class="bg-1">
+            <h1>Games.</h1>
+            <p>Tic-Tac-Toe<br>Game.</p>
+            <a href="./Games/Tic Tac Toe/index.html" class="button">Open</a>
+
+          </li>
+          <li class="bg-2">
+            <h1>Games.</h1>
+
+             <p>Rock Paper<br>Scissor Game</p>
+             <a href="./Games/RockPaperScissor/index.html" class="button">Open</a>
+
+          </li>
+          <li class="bg-3">
+            <h1>Games.</h1>
+
+             <p>Guess the random <br>Number</p>
+            <a href="./Games/Guess the random number/index.html" class="button">Open</a>
+
+          </li>
+          <li class="bg-4">
+            <h1>Games.</h1>
+
+            <p>Tambola Board<br>using html css js</p>
+           <a href="./Games/Tambola board/index.html" class="button">Open</a>
+
+         </li>
+         <li class="bg-5">
+          <h1>Games.</h1>
+
+          <p>Flip Card<br>Memory Game</p>
+         <a href="./Games/memory game/index.html" class="button">Open</a>
+
+       </li>
+  
+        </ul>
+        <ul class="sliderpagnation">
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i></a></li>
+
+        </ul>
+</section>
+  
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>satviksingh204@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i>7903464665</p>
+        <div class="social-icons">
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+          <button class="btn btn2" href="./images/images/my-cv.pdf"> Download CV</button>
+        </div>
+      </div>
+
+      <div class="contact-right">
+       <form action="" name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="text" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2"> Submit</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Swiper JS -->
+      <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+  
+      <script src="scripts/script.js"></script>
+      <script src="JS/swiper-bundle.min.js"></script>
+
+
+      <script>
+        //requires carouFredsel.js
+//pen by Beatrize
+
+jQuery(document).ready(function() {
+  "use strict";
+  $(".carousel").carouFredSel({
+    responsive: true,
+    width: "100%",
+    circular: true,
+    scroll: {
+      item: 1,
+      duration: 500,
+      pauseOnHover: true
+    },
+    auto: true,
+    items: {
+      visible: {
+        min: 1,
+        max: 1
+      },
+      height: "variable"
+    },
+    pagination: {
+      container: ".sliderpagnation",
+      anchorBuilder: false
+    }
+  });
+});
+
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+  
+</body>
+
+</html>
